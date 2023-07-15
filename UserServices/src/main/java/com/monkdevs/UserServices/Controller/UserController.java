@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
-    private Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
